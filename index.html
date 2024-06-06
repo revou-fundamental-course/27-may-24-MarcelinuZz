@@ -2,10 +2,162 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Marcelinus Portfolio</title>
+        <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
-        
+        <nav class="navbar">
+            <div class ="Logo"></div>
+
+            <section class ="Menu">
+                <a href="#Home" onclick="scrollWithOffset(event, 'Home')">Home</a>
+                <a href="#Profile" onclick="scrollWithOffset(event, 'Profile')">Our Profile</a>
+                <a href="#Achiev" onclick="scrollWithOffset(event, 'Achiev')">Facilitation</a>
+                <a href="#Message" onclick="scrollWithOffset(event, 'Message')">Message Us</a>
+            </secton>
+        </nav>
+
+        <hr>
+
+        <section class ="MainBody">
+            <section class="Home" id="Home">
+                <header><h1>Hi <span id="refresh">Harfi</span> <button id="pencet"></button> , Welcome To Website</h1></header>
+                <main><p>senang bertemu dengan mu, ini adalah website sekolah bunda mulia</P>
+                <div class="Content">
+                   <div class="slider">
+                        <div class="ImageContainer">
+                            <img class="ImageSlide" src="assets/Petojo.jpg">
+                            <img class="ImageSlide" src="assets/citra.jpg">
+                            <img class="ImageSlide" src="assets/Kantin.jpg">
+                            <img class="ImageSlide" src="assets/Badminton.jpg">
+                        </div>
+                    </div>
+
+                    <div class="slider">
+                        <div class="TextContainer">
+                            <h2 class="TextSlide"><br><span class="Judul">SBM PETOJO</span><br><br><span class="Address">
+                                Jl. A.M Sangaji No.20,RT.3/RW.4, Petojo Utara,<br> Kecamatan Gambir,  Kota Jakarta Pusat,
+                                <br> Daerah Khusus Ibukota Jakarta 10130</span>
+                                <br><br><br><span class="NoTelp">(021) 63866646</span></h2>
+                                <h2 class="TextSlide"><br><span class="Judul">SBM CITRA</span><br><br><span class="Address">Jl. Kalideres Permai 
+                                No.28, RW.14,<br> Kalideres, Kec. Kalideres, Barat,<br> Jakarta 11840</span>
+                                <br><br><br><span class="NoTelp">0812-8373-8158</span></h2>
+                        </div>
+                    </div>
+                </div>
+                </main>
+            </section>
+
+            <section class="Profile" id="Profile">
+                <header>
+                    <div class="NavProfile" id="centerProfile">
+                        <h1>Our Profile</h1>
+                    </div>
+                    <div class="NavProfile small" id="leftProfile">
+                        <h1>Visi</h1>
+                    </div>
+                    <div class="NavProfile small" id="rightProfile">
+                        <h1>Misi</h1>
+                    </div>
+                </header>
+                <main>
+                    <div class="ContainProfile" id="centerContainProfile"><p>
+                        Bunda Mulia School was established in February 1985, with the hope of being able to provide the best education to the 
+                        younger generation of the nation’s hope in order to welcome the future as a whole human being, integrity, quality, noble
+                         character and full of love.. We grateful to God for the existence of Bunda Mulia School until now,  it has had education
+                          levels from Playgroup, Kindergarten, Primary, Junior High School, Senior High School, Vocational High School majoring 
+                          Accounting, Tourism and Multimedia, and also SBM Bilingual Classes for Kindergarten, Primary  and Secondary levels, 
+                          where all levels of education have been Accredited A.SBM is under the Bunda Mulia Education Foundation (YPBM) which is
+                           very concerned about education quality and always guides students to achieve their goals. Under the same auspice,
+                            there are Bunda Mulia University and Tourism Academy (UBM / AKPAR) and Bunda Mulia International School (BMIS).</p>
+                    </div>
+                    <div class="ContainProfile small" id="leftContainProfile">
+                        <p>Become a role model in society through quality education</p>
+                    </div>
+                    <div class="ContainProfile small" id="rightContainProfile">
+                        <ul>
+                            <li>Educating students to become fully human beings based on the values of the Christian faith</li>
+                            <li>Organizing education and teaching based on the latest science and technology</li>
+                            <li>Producing graduates who are smart, skilled, independent, and have noble character</li>
+                        </ul>
+                    </div>
+                </main>
+            </section>
+
+           <section class="Achiev" id="Achiev">
+                <header><h1>Our Facilitation</h1></header>
+
+            <main>
+                <div class="CircleBox">
+                    <div class="circle" id="Teach"></div>
+                    <div class="circle1"></div>
+                    <div class="circle2"></div>
+                </div>
+                    <div class="desc">
+                        <P>Profesional Teacher</P>
+                        <div class="space"></div>
+                        <P>Sport Field</P>
+                        <div class="space2"></div>
+                        <p>Classroom</p>
+                    </div>
+            </main>
+
+            </section>
+
+            <section class="Message" id="Message">
+                <header><h1>Message Us</h1></header>
+                <main>
+                    
+                    <form class ="DataForm">
+                    <div class="Form">
+                        <label for="Name">Nama</label>
+                        <p>:</p>
+                        <input id="Name" type="text" required>
+                    </div>
+                    <div class="Form">
+                        <label for="Tgl">Tanggal Lahir</label>
+                        <p>:</p>
+                        <input id="Tgl" type="date" required>
+                    </div>
+                    <div class="RadioForm">
+                        <label for="Gender">Jenis Kelamin</label>
+                        <p>:</p>
+                        <input id="Laki Laki" type="radio" name="Gender" value="Laki Laki">Laki Laki</input>
+                        <input id="Perempuan" type="radio" name="Gender" value="Perempuan">Perempuan</input>
+                    </div>
+                    <div class="Form">
+                        <label for="Note">Pesan</label>
+                        <p>:</p>
+                        <textarea required id="Note" cols="64" rows="4">Tidak Ada Pesan</textarea>
+                    </div>
+                    <div class="Form">
+                        <button id="Kirim">Submit</button>
+                    </div>
+                    </form>
+                    
+                    <div class="Output">
+                        <div class="FirstLine">
+                        <h4>Current Time </h4><p>:</p>
+                        </div>
+                        <div class="AnotherLine">
+                            <h4>Nama </h4><p id="NamaOutput">:</p>
+                        </div>
+                        <div class="AnotherLine">
+                            <h4>Tanggal Lahir </h4><p id="TanggalOutput">:</p>
+                        </div>
+                        <div class="AnotherLine">
+                            <h4>Jenis Kelamin </h4><p id="GenderOutput">:</p>
+                        </div>
+                        <div class="AnotherLine">
+                            <h4>Pesan </h4><p id="PesanOutput">:</p>
+                        </div>
+                    </div>
+                </main>
+            </section>
+
+        </section>
+
+        <script src="js/script.js"></script>
     </body>
 </html>
